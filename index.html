@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bohdan Durniev — Pre-Sale & Support Engineer, IT infrastructure and cybersecurity specialist." />
+  <meta name="theme-color" content="#0a0d0f" />
+  <title>Bohdan Durniev — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .scanline {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bohdan Durniev — home"><span class="brand-mark">BD</span><span
+        class="brand-status"><i></i> SYSTEM ONLINE</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#profile" data-text="nav.about"></a>
+      <a href="#experience" data-text="nav.experience"></a>
+      <a href="#expertise" data-text="nav.expertise"></a>
+      <a href="#education" data-text="nav.education"></a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" id="langSwitch" type="button"><span>EN</span></button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false"
+        aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#profile" data-text="nav.about"></a>
+      <a href="#experience" data-text="nav.experience"></a>
+      <a href="#expertise" data-text="nav.expertise"></a>
+      <a href="#education" data-text="nav.education"></a>
+      <a href="#contact" data-text="nav.contact"></a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span><span data-text="hero.eyebrow"></span></p>
+        <h1><span data-text="hero.name"></span><em data-text="hero.role"></em></h1>
+        <p class="hero-intro" data-text="hero.intro"></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:durnevbogdan@gmail.com"><span
+              data-text="hero.primaryCta"></span><b>↗</b></a>
+          <a class="button button-ghost" href="#experience"><span data-text="hero.secondaryCta"></span><b>↓</b></a>
+          <a class="button button-download" href="assets/Bohdan-Durniev-CV.pdf" download="Bohdan-Durniev-CV.pdf"><span
+              data-text="hero.downloadCta"></span><b>⇩</b></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-frame">
+          <div class="corner c1"></div>
+          <div class="corner c2"></div>
+          <div class="corner c3"></div>
+          <div class="corner c4"></div>
+          <img src="assets/bohdan-durniev.png" alt="Bohdan Durniev" />
+          <div class="scanline"></div>
+          <span class="visual-tag tag-top">PROFILE_01</span>
+          <span class="visual-tag tag-bottom">IT PROFILE / ACTIVE</span>
+        </div>
+        <div class="availability"><span class="status-orbit"><i></i></span>
+          <div><strong data-text="hero.availability"></strong><small data-text="hero.location"></small></div>
+        </div>
+      </div>
+      <div class="scroll-cue"><span data-text="ui.scroll"></span><i></i></div>
+    </section>
+
+    <section class="profile section-pad" id="profile">
+      <div class="section-heading reveal">
+        <p data-text="profile.kicker"></p>
+        <h2 data-text="profile.title"></h2>
+      </div>
+      <div class="profile-body reveal delay-1">
+        <p class="large-copy" data-text="profile.body"></p>
+        <div class="principles" id="principles"></div>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="experience">
+      <div class="section-heading reveal">
+        <p data-text="experience.kicker"></p>
+        <h2 data-text="experience.title"></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="expertise section-pad" id="expertise">
+      <div class="section-heading reveal">
+        <p data-text="expertise.kicker"></p>
+        <h2 data-text="expertise.title"></h2>
+      </div>
+      <div class="expertise-grid" id="expertiseGrid"></div>
+    </section>
+
+    <section class="education section-pad" id="education">
+      <div class="section-heading reveal">
+        <p data-text="education.kicker"></p>
+        <h2 data-text="education.title"></h2>
+      </div>
+      <div class="education-grid">
+        <article class="edu-card reveal"><span>EDU_01</span>
+          <h3 data-text="education.degree"></h3>
+          <p data-text="education.university"></p><time data-text="education.period"></time>
+        </article>
+        <article class="language-card reveal delay-1"><span>LANG_SYS</span>
+          <h3 data-text="education.languagesTitle"></h3>
+          <div id="languageList"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="contact-copy reveal">
+        <p class="kicker" data-text="contact.kicker"></p>
+        <h2 data-text="contact.title"></h2>
+        <p data-text="contact.body"></p>
+      </div>
+      <div class="contact-links reveal delay-1">
+        <a href="mailto:durnevbogdan@gmail.com"><span
+            data-text="contact.emailLabel"></span><b>durnevbogdan@gmail.com</b><i>↗</i></a>
+        <a href="https://www.linkedin.com/in/bohdan-durniev-263862246" target="_blank" rel="noopener"><span
+            data-text="contact.linkedinLabel"></span><b>bohdan-durniev</b><i>↗</i></a>
+        <a href="tel:+380671081058"><span data-text="contact.phoneLabel"></span><b>+380 67 108 10 58</b><i>↗</i></a>
+        <a href="https://t.me/sistemniy" target="_blank" rel="noopener"><span
+            data-text="contact.telegramLabel"></span><b>@sistemniy</b><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <b id="year"></b> BOHDAN DURNIEV</span>
+    <p data-text="footer"></p><a href="#top">↑ TOP</a>
+  </footer>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
